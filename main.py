@@ -1,9 +1,9 @@
 print("Welcome to the Python pizza deliveries !")
 
 #users required questions
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
+size = input("What size pizza do you want? S, M, or L \n")
+add_pepperoni = input("Do you want pepperoni? Y or N \n")
+extra_cheese = input("Do you want extra cheese? Y or N \n")
 
 
 #code logic of the challenge
@@ -22,3 +22,9 @@ if add_pepperoni == "Y":
         bill += 2
     else:
         bill += 3
+
+if extra_cheese == "Y":
+    bill += 1
+
+#print the final bill
+print(f"Your final bill is ${bill}")
